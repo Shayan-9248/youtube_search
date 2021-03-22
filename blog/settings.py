@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Local App
+    'youtube.apps.YoutubeConfig',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +122,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static"
+]
+
+YOUTUBE_DATA_API_KEY = 'AIzaSyCW-qCZz_B5nmMYetfI6PBaSEYanJVF1N0'
